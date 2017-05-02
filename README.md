@@ -3,9 +3,12 @@ get-ip-cli
 
 a little command line tool for extracting IP addresses from text
 
+## Installation
+
+    npm install get-ip-cli -g
 ## Usage
 
-      Usage: index [options]
+      Usage: get-ips [options]
     
       Options:
     
