@@ -29,5 +29,6 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "repository": "git@github.com:fabianmoronzirfas/get-ip-cli.git"
 }
