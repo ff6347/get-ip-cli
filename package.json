@@ -1,0 +1,33 @@
+{
+  "name": "get-ip-cli",
+  "version": "0.1.0",
+  "description": "a little cli to extract ip adresses from a string for further usage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./index"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "get-ips": "./index.js"
+  },
+  "keywords": [
+    "ip",
+    "cli"
+  ],
+  "author": "Fabian 'fabiantheblind' Morón Zirfas <fabian.moron.zirfas@gmail.com> (http://fabianmoronzirfas.me)",
+  "license": "MIT",
+  "dependencies": {
+    "clipboardy": "^1.1.1",
+    "commander": "^2.9.0",
+    "ip-regex": "^2.1.0"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
