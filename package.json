@@ -1,6 +1,6 @@
 {
   "name": "get-ip-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "a little cli to extract ip adresses from a string for further usage",
   "main": "index.js",
   "scripts": {
