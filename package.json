@@ -20,7 +20,7 @@
   "dependencies": {
     "clipboardy": "^1.1.1",
     "commander": "^2.9.0",
-    "ip-regex": "^2.1.0"
+    "ip-regex": "^3.0.0"
   },
   "devDependencies": {
     "cz-conventional-changelog": "^2.0.0"
