@@ -4,7 +4,10 @@
   "description": "a little cli to extract ip adresses from a string for further usage",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:fileio": "node index.js -i test/input -o test/output",
+    "test:stdout": "node index.js -i test/input -s",
+    "test:jout": "node index.js -i test/input -j",
+    "test": "npm run test:fileio && npm run test:stdout && npm run test:jout",
     "start": "node ./index"
   },
   "preferGlobal": true,
@@ -18,12 +21,15 @@
   "author": "Fabian Morón Zirfas <fabian.moron.zirfas@gmail.com> (http://fabianmoronzirfas.me)",
   "license": "MIT",
   "dependencies": {
+    "@types/node": "^10.12.0",
     "clipboardy": "^1.1.1",
     "commander": "^2.9.0",
     "ip-regex": "^3.0.0"
   },
   "devDependencies": {
-    "cz-conventional-changelog": "^2.0.0"
+    "cz-conventional-changelog": "^2.0.0",
+    "eslint": "^5.7.0",
+    "eslint-config-unobtrusive": "^1.2.2"
   },
   "config": {
     "commitizen": {

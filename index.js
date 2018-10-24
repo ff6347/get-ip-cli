@@ -9,18 +9,19 @@ const program = require('commander');
 const clipboardy = require('clipboardy');
 const ipRegex = require('ip-regex');
 
+// @ts-ignore
 const pkg = require('./package.json');
 
 let inPath = null;
 let outPath = null;
-let toStdout = false;
-let fromClipboard = true;
+// let toStdout = false;
+// let fromClipboard = true;
 let data = '';
 
 function parseInPath (val) {
-  if(fs.existsSync(path.resolve(process.cwd(), val))) {
+  if (fs.existsSync(path.resolve(process.cwd(), val))) {
     inPath = val;
-  }else{
+  } else {
     console.log('the specified file path for the input file does not exist');
     // process.exit(1);
   }
@@ -43,19 +44,20 @@ program
 program.parse(process.argv);
 
 
-if(program.input !== undefined) {
+if (program.input !== undefined) {
   data = fs.readFileSync(inPath, 'utf8');
-  fromClipboard = false;
-}else{
+  // let fromClipboard = false;
+} else {
   data = clipboardy.readSync();
 }
 
 
+// @ts-ignore
 data = data.match(ipRegex());
 
-if(program.stdout !== undefined) {
-  if(data !== null) {
-    if(Array.isArray(data)) {
+if (program.stdout !== undefined) {
+  if (data !== null) {
+    if (Array.isArray(data)) {
       data.forEach((element) =>{
         console.log(element);
       });
@@ -65,20 +67,20 @@ if(program.stdout !== undefined) {
 
 data = JSON.stringify(data);
 
-if(program.jout !== undefined) {
-  if(data !== null) {
+if (program.jout !== undefined) {
+  if (data !== null) {
     console.log(data);
   }
 }
 
-if(program.output !== undefined) {
+if (program.output !== undefined) {
   fs.writeFile(outPath, data, 'utf8', (error, md) => {
-    if(error) {
+    if (error) {
       throw error;
     }
     console.log(`wrote to ${outPath}`);
   });
-}else{
+} else {
   // console.log('Putting the follosing output also  into the clipboard:');
   // console.log(data);
   clipboardy.writeSync(data);
