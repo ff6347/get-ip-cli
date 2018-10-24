@@ -14,10 +14,16 @@ clipboardy@^1.1.1:
     execa "^0.8.0"
 
 commander@^2.9.0:
-  version "2.9.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-2.9.0.tgz#9c99094176e12240cb22d6c5146098400fe0f7d4"
-  dependencies:
-    graceful-readlink ">= 1.0.0"
+  version "2.19.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.19.0.tgz#f6198aa84e5b83c46054b94ddedbfed5ee9ff12a"
+
+conventional-commit-types@^2.0.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/conventional-commit-types/-/conventional-commit-types-2.2.0.tgz#5db95739d6c212acbe7b6f656a11b940baa68946"
+
+conventional-commit-types@^2.0.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/conventional-commit-types/-/conventional-commit-types-2.2.0.tgz#5db95739d6c212acbe7b6f656a11b940baa68946"
 
 conventional-commit-types@^2.0.0:
   version "2.2.0"
@@ -44,6 +50,7 @@ cz-conventional-changelog@^2.0.0:
 execa@^0.8.0:
   version "0.8.0"
   resolved "https://registry.yarnpkg.com/execa/-/execa-0.8.0.tgz#d8d76bbc1b55217ed190fd6dd49d3c774ecfc8da"
+
   dependencies:
     cross-spawn "^5.0.1"
     get-stream "^3.0.0"
@@ -61,9 +68,10 @@ get-stream@^3.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/graceful-readlink/-/graceful-readlink-1.0.1.tgz#4cafad76bc62f02fa039b2f94e9a3dd3a391a725"
 
-ip-regex@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/ip-regex/-/ip-regex-2.1.0.tgz#fa78bf5d2e6913c911ce9f819ee5146bb6d844e9"
+ip-regex@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/ip-regex/-/ip-regex-3.0.0.tgz#0a934694b4066558c46294244a23cc33116bf732"
+
 
 is-stream@^1.1.0:
   version "1.1.0"
